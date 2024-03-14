@@ -26,4 +26,4 @@ jobs:
     - name: Push changes to repository
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.COMPILE_LATEX }}
