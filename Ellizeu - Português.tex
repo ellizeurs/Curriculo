@@ -1,0 +1,231 @@
+% Clean CV/Resume Template, by Bennet B <dev@bennet.cc>
+% CC0, Public-Domain
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this template and associated files (the "Template"), to deal
+% in the Template without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Template, and to permit persons to whom the Template is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Template.
+%
+% THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE TEMPLATE OR THE USE OR OTHER DEALINGS IN THE
+% TEMPLATE.
+%
+% based on Modern CV by Habib Semouma
+% https://www.overleaf.com/latex/templates/modern-cv-slash-resume-template/vjrqdkpjckwj
+%
+% 
+\documentclass[oneside]{article}
+
+\usepackage{wallpaper}
+\usepackage{geometry}
+\usepackage[
+    unicode=true,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    breaklinks=false,
+    pdfborder={0 0 0},
+    backref=false,
+    colorlinks=false
+    ]{hyperref}
+\usepackage{lastpage}
+\usepackage{hyphenat}
+\usepackage{hyphsubst}
+\usepackage{tabularx}
+\usepackage{moresize}
+\usepackage[document]{ragged2e}
+% \usepackage{parskip}
+
+\usepackage[scaled]{helvet}
+\usepackage{fontawesome5}
+\usepackage[defaultfam,tabular,oldstyle]{montserrat}
+\usepackage[T1]{fontenc}
+
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{cvstyle}
+
+\begin{document}
+\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
+\fcolorbox{red}{sidebg}{%
+    \begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.40\textwidth-2\fboxrule-2\fboxsep\relax}
+        \color{sidetext}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR NAME, PRONOUNS, OCCUPATION(s), AND HEADSHOT
+        {\bfseries\scshape\HUGE Ellizeu} \\
+        {\bfseries\scshape\Huge Rodrigues Sena} 
+        \vspace{.3cm} \\
+        Engenheiro Eletrônico e de Computação 
+        \\
+        \vspace{.3cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR PERSONAL INFROMATION
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Sobre Mim}
+        \section*{\large Sobre Mim}
+            Desenvolvedor apaixonado por novos desafios, já
+            trabalhei em projetos de tecnologia em dois
+            continentes (Europa e América). Forte
+            conhecimento de metodologia ágil e trabalho
+            muito bem em equipe. Espírito empreendedor!
+        \vspace{.3cm} \\
+        \rule{\linewidth}{0.4pt} \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR PERSONAL INFROMATION
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Personal info}
+        \section*{}
+        \begin{tabularx}{\textwidth}{cY}
+            \faStarOfLife{} & 21/11/1999 \\
+            \faPhone{}      & +55 (21) 97261-6385 \\
+            \faEnvelope{}   & \href{mailto:ellizeurs@hotmail.com}{ellizeurs@hotmail.com} \\
+            %    \faCode{}     & \href{https://example.com}{example.com}
+            \faGithub{}   & \href{https://github.com/ellizeurs}{/ellizeurs} \\
+            \faLinkedin{} & \href{https://www.linkedin.com/in/ellizeurs/}{/ellizeurs} \\
+            \faMapMarker{}  & Rio de Janeiro \\
+        \end{tabularx}
+        \vspace{.3cm} \\
+        \rule{\linewidth}{0.4pt} \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR SKILLS
+        % Add/Remove as seen fit, Icons: https://packages.oth-regensburg.de/ctan/fonts/fontawesome5/doc/fontawesome5.pdf
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Habilidades}
+        \section*{\large Habilidades}
+        \begin{tabularx}{\textwidth}{cY}
+            \faCode{}        & C++, C, Python, Bash, PHP, Javascript, JQuery, React, Node, C\#, Java, MySQL, PostgreSQL, MatLab \\
+            \faPen*{}        & \LaTeX, HTML, CSS \\
+            \faFont{}        & \{MS, Libre, GSuite\} Office \\
+            \faCogs{}        & Linux, Windows \\
+            \faLaptopCode{}  & VsCode \\
+            \faToolbox{}     & Scrum, DevOps
+        \end{tabularx}
+        \vspace{1pt} \\
+        \rule{\linewidth}{0.4pt}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % LANGUAGES
+        \phantomsection
+        \addcontentsline{toc}{section}{Idiomas}
+        \section*{\large Idiomas}
+        \begin{tabular}{cl}
+            \faLanguage{} & Português (C2) \\
+            \faLanguage{} & Inglês (C1) \\
+            \faLanguage{} & Espanhol (B2) 
+        \end{tabular}
+        \vspace{.3cm}
+        \\
+        \rule{\linewidth}{0.4pt}
+        \\
+
+    \end{minipage}
+}
+\hfill
+\fcolorbox{red}{mainbg}{%
+    \begin{minipage}[t][\dimexpr\textheight-2\fboxrule-2\fboxsep\relax][t]{\dimexpr0.6\textwidth-2\fboxrule-2\fboxsep\relax}
+        \color{maintext}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % OBJETIVO
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Objetivo}
+        \section*{\scshape\Large Objetivo \rule{\linewidth}{0.4pt}}
+        {Meu objetivo é atuar na área de eletrônica e engenharia da
+        computação, com foco em computação, ciência de dados,
+        desenvolvimento web e aprendizado de máquina.  \\[1ex]}
+        \vspace{.3cm}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % WORK EXPERIENCE
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Experiência Profissional}
+        \section*{\scshape\Large Experiência Profissional \rule{\linewidth}{0.4pt}}
+%
+        {\large \textbf{FundX Academy}} \\ 
+        {{\fontseries{medium}\selectfont Desenvolvedor Back End | Tech leader, Tempo Integral}} \\
+        {\scshape\fontseries{light}\selectfont\footnotesize Mai 2022 \textendash{} Out 2022} 
+        %\begin{itemize}
+        %    \setlength{\itemsep}{-3pt}
+        %    \item Responsabilidades
+        %    \begin{itemize}
+        %        \item That included Stuff
+        %        \item and more Stuff
+        %    \end{itemize}
+        %    \item Outras tarefas
+        %\end{itemize}
+        \vspace{.3cm}
+
+        {\large \textbf{Empresa de Pesquisa Energética}} \\
+        {{\fontseries{medium}\selectfont Cientista de Dados, Meio Período}} \\
+        {\scshape\fontseries{light}\selectfont\footnotesize Out 2021 \textendash{} Out 2023} 
+        %\begin{itemize}
+        %    \setlength{\itemsep}{-3pt}
+        %    \item Responsabilidades
+        %    \begin{itemize}
+        %        \item That included Stuff
+        %        \item and more Stuff
+        %    \end{itemize}
+        %    \item Outras tarefas
+        %\end{itemize}
+        \vspace{.3cm}
+
+        {\large \textbf{Universinagem}}\\
+        {{\fontseries{medium}\selectfont Desenvolvedor Back-End, Tempo Integral}}\\
+        {\scshape\fontseries{light}\selectfont\footnotesize Out 2019 \textendash{} } 
+        %\begin{itemize}
+        %    \setlength{\itemsep}{-3pt}
+        %    \item Responsabilidades
+        %    \begin{itemize}
+        %        \item That included Stuff
+        %        \item and more Stuff
+        %    \end{itemize}
+        %    \item Outras tarefas
+        %\end{itemize}
+        \vspace{.3cm}
+
+        {\large \textbf{Minerva Rockets}}\\
+        {{\fontseries{medium}\selectfont Engenheiro de Inovação, Meio Período}}\\
+        {\scshape\fontseries{light}\selectfont\footnotesize Out 2019 \textendash{} Mar 2022} 
+        %\begin{itemize}
+        %    \setlength{\itemsep}{-3pt}
+        %    \item Responsabilidades
+        %    \begin{itemize}
+        %        \item That included Stuff
+        %        \item and more Stuff
+        %    \end{itemize}
+        %    \item Outras tarefas
+        %\end{itemize}
+        \vspace{.3cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % EDUCATION
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Educação}
+        \section*{\scshape\Large Educação \rule{\linewidth}{0.4pt}}
+%
+        {\large \textbf{Universidade Federal do Rio de Janeiro (Bacharel)}} \\
+        {\scshape\fontseries{light}\selectfont\footnotesize Rio de Janeiro, RJ \qquad 2017 \textendash{} } \\
+        {Engenharia Eletrônica e de Computação} \\[1ex]
+        %{\footnotesize Subsidiary subject: Psychology} \\
+        %{\footnotesize In-depth study: Thievery} \\
+        %{\footnotesize Thesis subject: ultrices gravida dictum fusce} \\[2ex]
+        \vspace{.3cm}
+
+        {\large \textbf{FAETEC RJ - E.T.E. João Luiz do Nascimento (Ensino Médio e Técnico)}} \\
+        {\scshape\fontseries{light}\selectfont\footnotesize Nova Iguaçu, RJ \qquad 2014 \textendash{} 2016} \\
+        {Técnico em Eletrônica} \\[1ex]
+        %{\footnotesize Elective Courses: Chemistry, Engineering, Art} \\
+        % \\
+        \vfill%
+        {\hfill\small\fontseries{extralight}\selectfont Page \thepage of \pageref{LastPage}\hfill}
+    \end{minipage}
+}%
+\end{document}
