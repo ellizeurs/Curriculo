@@ -13,9 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up LaTeX
-      uses: xu-cheng/latex-action@v2
-
     - name: Compile LaTeX
       run: |
         for file in Ellizeu-*.tex; do
