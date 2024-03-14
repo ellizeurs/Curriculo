@@ -15,7 +15,7 @@ jobs:
 
     - name: Compile LaTeX
       run: |
-        for file in Ellizeu-*.tex; do
+        for file in "Ellizeu -*.tex"; do
           if [ -f "$file" ]; then
             echo "Compiling $file..."
             pdflatex "$file" >/dev/null 2>&1
