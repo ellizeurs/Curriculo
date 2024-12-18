@@ -1,28 +1,3 @@
-% Plantilla de CV/Resumen limpio, por Bennet B <dev@bennet.cc>
-% CC0, Dominio público
-% 
-% Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia
-% de esta plantilla y los archivos asociados (la "Plantilla"), para tratar
-% en la Plantilla sin restricciones, incluidos, entre otros, los derechos
-% a utilizar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender
-% copias de la Plantilla, y para permitir a las personas a las que se les entregue la Plantilla
-% hacerlo, sujeto a las siguientes condiciones:
-%
-% El aviso de derechos de autor anterior y este aviso de permiso se incluirán en todo
-% copias o partes sustanciales de la Plantilla.
-%
-% LA PLANTILLA SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA,
-% INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD,
-% IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO SE RESPONSABILIZARÁN
-% LOS AUTORES O TITULARES DE LOS DERECHOS DE AUTOR POR CUALQUIER RECLAMO, DAÑOS U OTRO
-% RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO MODO, QUE SURJA DE,
-% FUERA O EN CONEXIÓN CON LA PLANTILLA O EL USO U OTRO TRATAMIENTO DE LA
-% PLANTILLA.
-%
-% basado en Modern CV por Habib Semouma
-% https://www.overleaf.com/latex/templates/modern-cv-slash-resume-template/vjrqdkpjckwj
-%
-% 
 \documentclass[oneside]{article}
 
 \usepackage{wallpaper}
@@ -57,70 +32,71 @@
 \usepackage{cvstyle}
 
 \begin{document}
-\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
+\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}% 
 \fcolorbox{red}{sidebg}{%
     \begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.40\textwidth-2\fboxrule-2\fboxsep\relax}
         \color{sidetext}
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % SU NOMBRE, PRONOMBRES, OCUPACIÓN(ES), Y FOTOGRAFÍA
-        {\bfseries\scshape\HUGE Ellizeu} \\
+        % TU NOMBRE, PRONOMBRES, OCUPACIÓN Y FOTO
+        {\bfseries\scshape\HUGE Ellizeu} \\ 
         {\bfseries\scshape\Huge Rodrigues Sena} 
-        \vspace{.3cm} \\
-        Ingeniero en Electrónica y Computación 
-        \\
+        \vspace{.3cm} \\ 
+        Ingeniero Electrónico y de Computación
+        \\ 
         \vspace{.3cm}
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % SU INFORMACIÓN PERSONAL
+        % TU INFORMACIÓN PERSONAL
         \phantomsection{}
-        \addcontentsline{toc}{section}{Acerca de mí}
-        \section*{\large Acerca de mí}
-            Desarrollador apasionado en busca de nuevos desafíos, he trabajado en proyectos de tecnología en dos continentes (Europa y América). Amplio conocimiento de metodologías ágiles y destacado trabajo en equipo. ¡Espíritu emprendedor!
-        \vspace{.3cm} \\
-        \rule{\linewidth}{0.4pt} \\
+        \addcontentsline{toc}{section}{Sobre mí}
+        \section*{\large Sobre mí}
+            Desarrollador apasionado por nuevos desafíos, he trabajado en proyectos tecnológicos en dos continentes (Europa y América). 
+            Fuerte conocimiento en metodologías ágiles y gran capacidad para trabajar en equipo. ¡Espíritu emprendedor!
+        \vspace{.3cm} \\ 
+        \rule{\linewidth}{0.4pt} \\ 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % SU INFORMACIÓN PERSONAL
+        % INFORMACIÓN PERSONAL
         \phantomsection{}
-        \addcontentsline{toc}{section}{Información Personal}
+        \addcontentsline{toc}{section}{Información personal}
         \section*{}
         \begin{tabularx}{\textwidth}{cY}
-            \faStarOfLife{} & 21/11/1999 \\
-            \faPhone{}      & +55 (21) 97261-6385 \\
-            \faEnvelope{}   & \href{mailto:ellizeurs@hotmail.com}{ellizeurs@hotmail.com} \\
-            %    \faCode{}     & \href{https://example.com}{example.com}
-            \faGithub{}   & \href{https://github.com/ellizeurs}{/ellizeurs} \\
-            \faLinkedin{} & \href{https://www.linkedin.com/in/ellizeurs/}{/ellizeurs} \\
-            \faMapMarker{}  & Río de Janeiro \\
+            \faStarOfLife{} & 21/11/1999 \\ 
+            \faPhone{}      & +55 (21) 97261-6385 \\ 
+            \faEnvelope{}   & \href{mailto:ellizeurs@hotmail.com}{ellizeurs@hotmail.com} \\ 
+            % \faCode{}     & \href{https://example.com}{example.com}
+            \faGithub{}     & \href{https://github.com/ellizeurs}{/ellizeurs} \\ 
+            \faLinkedin{}   & \href{https://www.linkedin.com/in/ellizeurs/}{/ellizeurs} \\ 
+            \faMapMarker{}  & Río de Janeiro \\ 
         \end{tabularx}
-        \vspace{.3cm} \\
-        \rule{\linewidth}{0.4pt} \\
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % SUS HABILIDADES
+        \vspace{.3cm} \\ 
+        \rule{\linewidth}{0.4pt} \\ 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+        % TUS HABILIDADES
         \phantomsection{}
         \addcontentsline{toc}{section}{Habilidades}
         \section*{\large Habilidades}
         \begin{tabularx}{\textwidth}{cY}
-            \faCode{}        & C++, C, Python, Bash, PHP, Javascript, JQuery, React, Node, C\#, Java, MySQL, PostgreSQL, MatLab \\
-            \faPen*{}        & \LaTeX, HTML, CSS \\
-            \faFont{}        & \{MS, Libre, GSuite\} Office \\
-            \faCogs{}        & Linux, Windows \\
-            \faLaptopCode{}  & VsCode \\
-            \faToolbox{}     & Scrum, DevOps
+            \faCode{}        & C++, C, Python, Bash, PHP, Javascript, JQuery, React, Node, C\#, Java, MySQL, PostgreSQL, MatLab \\ 
+            \faPen*{}        & \LaTeX, HTML, CSS \\ 
+            \faFont{}        & \{MS, Libre, GSuite\} Office \\ 
+            \faCogs{}        & Linux, Windows \\ 
+            \faLaptopCode{}  & VsCode \\ 
+            \faToolbox{}     & Scrum, DevOps 
         \end{tabularx}
-        \vspace{1pt} \\
+        \vspace{1pt} \\ 
         \rule{\linewidth}{0.4pt}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
         % IDIOMAS
-        \phantomsection
+        \phantomsection 
         \addcontentsline{toc}{section}{Idiomas}
         \section*{\large Idiomas}
         \begin{tabular}{cl}
-            \faLanguage{} & Portugués (C2) \\
-            \faLanguage{} & Inglés (C1) \\
+            \faLanguage{} & Portugués (C2) \\ 
+            \faLanguage{} & Inglés (C1) \\ 
             \faLanguage{} & Español (B2) 
         \end{tabular}
-        \vspace{.3cm}
-        \\
-        \rule{\linewidth}{0.4pt}
+        \vspace{.3cm} 
+        \\ 
+        \rule{\linewidth}{0.4pt} 
         \\
 
     \end{minipage}
@@ -134,91 +110,101 @@
         \phantomsection{}
         \addcontentsline{toc}{section}{Objetivo}
         \section*{\scshape\Large Objetivo \rule{\linewidth}{0.4pt}}
-        {Mi objetivo es trabajar en el campo de la electrónica y la ingeniería informática, centrándome en la informática, la ciencia de datos, el desarrollo web y el aprendizaje automático. \\[1ex]}
+        {Mi objetivo es trabajar en el área de electrónica e ingeniería de la computación, con enfoque en computación, ciencia de datos, 
+        desarrollo web y aprendizaje automático.  \\[1ex]}
         \vspace{.3cm}
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % EXPERIENCIA LABORAL
         \phantomsection{}
-        \addcontentsline{toc}{section}{Experiencia Laboral}
-        \section*{\scshape\Large Experiencia Laboral \rule{\linewidth}{0.4pt}}
+        \addcontentsline{toc}{section}{Experiencia Profesional}
+        \section*{\scshape\Large Experiencia Profesional \rule{\linewidth}{0.4pt}}
 %
         {\large \textbf{FundX Academy}} \\ 
-        {{\fontseries{medium}\selectfont Desarrollador de Back End | Líder Tecnológico, Tiempo completo}} \\
-        {\scshape\fontseries{light}\selectfont\footnotesize Mayo 2022 \textendash{} Octubre 2022} 
+        {{\fontseries{medium}\selectfont Desarrollador Back End | Líder Técnico, Tiempo Completo}} \\ 
+        {\scshape\fontseries{light}\selectfont\footnotesize May 2022 \textendash{} Oct 2022} 
         %\begin{itemize}
         %    \setlength{\itemsep}{-3pt}
         %    \item Responsabilidades
         %    \begin{itemize}
-        %        \item That included Stuff
-        %        \item and more Stuff
+        %        \item Que incluyó algo
+        %        \item Y más cosas
         %    \end{itemize}
         %    \item Otras tareas
         %\end{itemize}
         \vspace{.3cm}
 
-        {\large \textbf{Empresa de Pesquisa Energética}} \\
-        {{\fontseries{medium}\selectfont Científico de Datos, Medio tiempo}} \\
-        {\scshape\fontseries{light}\selectfont\footnotesize Octubre 2021 \textendash{} Octubre 2023} 
+        {\large \textbf{Empresa de Investigación Energética}} \\ 
+        {{\fontseries{medium}\selectfont Científico de Datos, Medio Tiempo}} \\ 
+        {\scshape\fontseries{light}\selectfont\footnotesize Oct 2021 \textendash{} Oct 2023} 
         %\begin{itemize}
         %    \setlength{\itemsep}{-3pt}
         %    \item Responsabilidades
         %    \begin{itemize}
-        %        \item That included Stuff
-        %        \item and more Stuff
+        %        \item Que incluyó algo
+        %        \item Y más cosas
         %    \end{itemize}
         %    \item Otras tareas
         %\end{itemize}
         \vspace{.3cm}
 
         {\large \textbf{Universinagem}}\\
-        {{\fontseries{medium}\selectfont Desarrollador de Back-End, Tiempo completo}}\\
-        {\scshape\fontseries{light}\selectfont\footnotesize Octubre 2019 \textendash{} } 
+        {{\fontseries{medium}\selectfont Desarrollador Back-End, Tiempo Completo}}\\
+        {\scshape\fontseries{light}\selectfont\footnotesize Oct 2019 \textendash{} } 
         %\begin{itemize}
         %    \setlength{\itemsep}{-3pt}
         %    \item Responsabilidades
         %    \begin{itemize}
-        %        \item That included Stuff
-        %        \item and more Stuff
+        %        \item Que incluyó algo
+        %        \item Y más cosas
         %    \end{itemize}
         %    \item Otras tareas
         %\end{itemize}
         \vspace{.3cm}
 
         {\large \textbf{Minerva Rockets}}\\
-        {{\fontseries{medium}\selectfont Ingeniero de Innovación, Medio tiempo}}\\
-        {\scshape\fontseries{light}\selectfont\footnotesize Octubre 2019 \textendash{} Marzo 2022} 
+        {{\fontseries{medium}\selectfont Ingeniero de Innovación, Medio Tiempo}}\\
+        {\scshape\fontseries{light}\selectfont\footnotesize Oct 2019 \textendash{} Mar 2022} 
         %\begin{itemize}
         %    \setlength{\itemsep}{-3pt}
         %    \item Responsabilidades
         %    \begin{itemize}
-        %        \item That included Stuff
-        %        \item and more Stuff
+        %        \item Que incluyó algo
+        %        \item Y más cosas
         %    \end{itemize}
         %    \item Otras tareas
         %\end{itemize}
         \vspace{.3cm}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
         % EDUCACIÓN
         \phantomsection{}
         \addcontentsline{toc}{section}{Educación}
         \section*{\scshape\Large Educación \rule{\linewidth}{0.4pt}}
 %
-        {\large \textbf{Universidade Federal do Rio de Janeiro (Licenciatura)}} \\
-        {\scshape\fontseries{light}\selectfont\footnotesize Río de Janeiro, RJ \qquad 2017 \textendash{} } \\
-        {Ingeniería en Electrónica y Computación} \\[1ex]
-        %{\footnotesize Subsidiary subject: Psychology} \\
-        %{\footnotesize In-depth study: Thievery} \\
-        %{\footnotesize Thesis subject: ultrices gravida dictum fusce} \\[2ex]
+        {\large \textbf{Universidad Federal de Río de Janeiro (Maestría)}} \\ 
+        {\scshape\fontseries{light}\selectfont\footnotesize Río de Janeiro, RJ \qquad 2024 \textendash{} } \\ 
+        {Ingeniería Eléctrica} \\[1ex]
+        %{\footnotesize Asignatura subsidiaria: Psicología} \\ 
+        %{\footnotesize Estudio profundo: Robos} \\ 
+        %{\footnotesize Tema de la tesis: Predicción de Precios del Biodiesel usando Redes Neuronales} \\[2ex]
         \vspace{.3cm}
 
-        {\large \textbf{FAETEC RJ - E.T.E. João Luiz do Nascimento (Educación Secundaria y Técnica)}} \\
-        {\scshape\fontseries{light}\selectfont\footnotesize Nova Iguaçu, RJ \qquad 2014 \textendash{} 2016} \\
+        {\large \textbf{Universidad Federal de Río de Janeiro (Grado)}} \\ 
+        {\scshape\fontseries{light}\selectfont\footnotesize Río de Janeiro, RJ \qquad 2017 \textendash{} 2024} \\ 
+        {Ingeniería Electrónica y de Computación} \\[1ex]
+        %{\footnotesize Asignatura subsidiaria: Psicología} \\ 
+        %{\footnotesize Estudio profundo: Robos} \\ 
+        %{\footnotesize Tema de la tesis: Predicción de la Serie Temporal de Precios del Biodiesel usando Redes Neuronales} \\[2ex]
+        {\footnotesize Tema de la tesis: Predicción de la Serie Temporal de Precios del Biodiesel usando Redes Neuronales} \\[2ex]
+        \vspace{.3cm}
+
+        {\large \textbf{FAETEC RJ - E.T.E. João Luiz do Nascimento (Escuela Secundaria y Técnica)}} \\ 
+        {\scshape\fontseries{light}\selectfont\footnotesize Nova Iguaçu, RJ \qquad 2014 \textendash{} 2016} \\ 
         {Técnico en Electrónica} \\[1ex]
-        %{\footnotesize Elective Courses: Chemistry, Engineering, Art} \\
-        % \\
+        %{\footnotesize Cursos Electivos: Química, Ingeniería, Arte} \\ 
+        % \\ 
         \vfill%
         {\hfill\small\fontseries{extralight}\selectfont Página \thepage de \pageref{LastPage}\hfill}
     \end{minipage}
-}%
+}% 
 \end{document}
