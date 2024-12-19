@@ -1,6 +1,6 @@
 # Currículo em LaTeX
 
-Este repositório contém meu currículo desenvolvido em LaTeX. O uso de LaTeX permite um controle preciso sobre a formatação e apresentação do documento, garantindo um visual profissional e organizado.
+Este repositório contém meu currículo desenvolvido em LaTeX.
 
 ## Conteúdo
 
