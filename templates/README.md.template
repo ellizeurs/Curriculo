@@ -1,0 +1,25 @@
+# Currículo em LaTeX
+
+Este repositório contém meu currículo desenvolvido em LaTeX, preenchido e traduzido automaticamente com jinja e googletrans.
+
+## Como Compilar
+
+1. Certifique-se de ter o LaTeX instalado no seu computador. Recomendamos distribuições como [TeX Live](https://www.tug.org/texlive/) ou [MiKTeX](https://miktex.org/).
+2. Navegue até o diretório do repositório.
+3. Instale as bibliotecas:
+   ```bash
+   pip install -r requirements.txt"
+   ```
+3. Execute o comando:
+```bash
+python main.py
+```
+4. Os arquivos serão gerados na pasta PDFs
+
+## Arquivos gerados
+{{FILES}}
+
+## Links Importantes
+
+- [Currículo Lattes](http://lattes.cnpq.br/1344771646421983)
+- [Perfil no LinkedIn](https://www.linkedin.com/in/ellizeurs/)

@@ -1,0 +1,119 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\geometry{margin=1.5cm}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{xcolor}
+
+% Fonte legível
+\usepackage{lmodern}
+
+% Configurações do hyperref
+\hypersetup{
+	pdftitle={{firstName}} - CV - Português,
+	pdfauthor={{personalInformation.name}},
+	pdfsubject={CV}
+}
+
+% Definição de comandos para facilitar estilo
+\newcommand{\sectiontitle}[1]{
+  \vspace{0.8em}
+  \noindent\textbf{\Large #1}
+  \vspace{0.3em}
+  \hrule
+  \vspace{0.8em}
+}
+
+\begin{document}
+
+% -------------------------
+% Cabeçalho com nome e contato
+% -------------------------
+\begin{center}
+    {\LARGE \textbf{ {{personalInformation.name}} }}\\[0.2cm]
+    {{personalInformation.occupation}} \\
+    \vspace{0.3cm}
+    \href{mailto:{{personalInformation.email}}}{{personalInformation.email}} \quad
+    {{personalInformation.phone}} \quad
+    \href{https://github.com/{{personalInformation.github}}}{github.com/{{personalInformation.github}}} \quad
+    \href{https://www.linkedin.com/in/{{personalInformation.linkedin}}/}{linkedin.com/in/{{personalInformation.linkedin}}} \\
+    {{personalInformation.location}}
+\end{center}
+
+% -------------------------
+% Sobre Mim / Perfil Profissional
+% -------------------------
+\sectiontitle{ {{aboutMe.title}} }
+
+{{aboutMe.content}}
+
+% -------------------------
+% Objetivo Profissional
+% -------------------------
+\sectiontitle{ {{goal.title}} }
+
+{{goal.content}}
+
+% -------------------------
+% Experiência Profissional
+% -------------------------
+\sectiontitle{ {{experiences.title}} }
+
+			{% for e in experiences.content %}
+\hspace{-0.5em}
+\textbf{ {{e.company}} } \textit{( {{e.location}} )} \hfill {{e.startDate}} -- {{e.endDate if e.endDate else ""}} \\
+\textit{ {{e.position}} } 
+				{% for i in e.additionalInfo %}
+				{{i.title}} {% if i.content %} : {{ i.content | join(", ") }} {% endif %}
+				      {% endfor %}
+              \vspace{0.3cm}
+              {% endfor %}
+
+% -------------------------
+% Educação
+% -------------------------
+\sectiontitle{ {{education.title}} }
+
+			{% for e in education.content %}
+\hspace{-0.5em}
+\textbf{ {{e.institution}} } \textit{( {{e.location}} )} \hfill {{e.startDate}} -- {{e.endDate if e.endDate else ""}} \\
+\textit{ {{e.degree}} } 
+				{% for i in e.additionalInfo %}
+				{{i.title}} {% if i.content %} : {{ i.content | join(", ") }} {% endif %}
+				      {% endfor %}
+              \vspace{0.3cm}
+              {% endfor %}
+
+% -------------------------
+% Habilidades Técnicas
+% -------------------------
+\sectiontitle{ {{skills.title}} }
+
+\begin{tabular}{@{}p{4cm}p{11cm}@{}}
+  {% for s in skills.content %}
+  {{ s.group }}: & {{ s.skills | map(attribute='name') | join(', ') }} \\
+  {% endfor %}
+\end{tabular}
+
+% -------------------------
+% Idiomas
+% -------------------------
+\sectiontitle{ {{languages.title}} }
+
+\begin{tabular}{@{}ll@{}}
+{% for lang in languages.content %}
+{{ lang.name }} & {{ lang.level }} \\
+{% endfor %}
+\end{tabular}
+
+			{% for a in additionalInfo %}
+			\sectiontitle{ {{a.title}} }
+            {{a.content}}
+            {% endfor %}
+
+\end{document}
