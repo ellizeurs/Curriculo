@@ -157,7 +157,7 @@
 			\section*{\large {{languages.title}}}
 			\begin{tabular}{cl}
 				{% for l in languages.content %}
-				\faLanguage & {{ l.name }} \\
+				\faLanguage & {{ l.name }} ({{ l.level }}) \\
 				{% endfor %}
 			\end{tabular}
 			%\vspace{.3cm}
@@ -255,7 +255,7 @@
 			\vspace{.3cm}
             {% endfor %}
 
-			\vfill%
+			\vfill
 		\end{minipage}
-	}%
+	}
 \end{document}
