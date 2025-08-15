@@ -1,0 +1,378 @@
+{
+    "language": "pt",
+    "personalInformation": {
+        "name": "Ellizeu Rodrigues Sena",
+        "occupation": "Engenheiro Eletrônico e de Computação",
+        "location": "Rio de Janeiro, RJ",
+        "email": "ellizeurs@hotmail.com",
+        "birthDate": "21/11/1999",
+        "phone": "+55 (21) 97261-6385",
+        "linkedin": "ellizeurs",
+        "github": "ellizeurs"
+    },
+    "aboutMe": {
+        "title": "Sobre Mim",
+        "content": "Desenvolvedor apaixonado por novos desafios, já trabalhei em projetos de tecnologia em dois continentes (Europa e América). Forte conhecimento de metodologia ágil e trabalho muito bem em equipe. Espírito empreendedor!"
+    },
+    "goal": {
+        "title": "Objetivo",
+        "content": "Meu objetivo é atuar na área de eletrônica e engenharia da computação, com foco em computação, ciência de dados, desenvolvimento web e aprendizado de máquina."
+    },
+    "skills": {
+        "title": "Habilidades",
+        "content": [
+            {
+                "group": "Linguagens de Programação",
+                "icon": "faCode",
+                "skills": [
+                    {
+                        "name": "Python",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Bash",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "PHP",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Java",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Node.js",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "C",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "C++",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "C\\#",
+                        "level": "Avançado"
+                    }
+                ]
+            },
+            {
+                "group": "Bancos de dados",
+                "icon": "faDatabase",
+                "skills": [
+                    {
+                        "name": "MySQL",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "PostgreSQL",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Frameworks e Bibliotecas",
+                "icon": "faCodeBranch",
+                "skills": [
+                    {
+                        "name": "React",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Angular",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Django",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "FastAPI",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Next.js",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Inteligência Artificial",
+                "icon": "faBrain",
+                "skills": [
+                    {
+                        "name": "TensorFlow",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "PyTorch",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Keras",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "BERT",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "GPT",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "LLaMa",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "LLM",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Processamento de Linguagem Natural",
+                "icon": "faNetworkWired",
+                "skills": [
+                    {
+                        "name": "NLTK",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "spaCy",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Transformers",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "OpenAI",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "RAG",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "LangChain",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "LangGraph",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Linguagens de marcação e estilo",
+                "icon": "faPenNib",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "CSS",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Markdown",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "\\LaTeX",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "SASS",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Pacote Office",
+                "icon": "faFont",
+                "skills": [
+                    {
+                        "name": "\\{MS, Libre, GSuite\\} Office",
+                        "level": "Avançado"
+                    }
+                ]
+            },
+            {
+                "group": "Sistemas operacionais",
+                "icon": "faCogs",
+                "skills": [
+                    {
+                        "name": "Windows",
+                        "level": "Avançado"
+                    },
+                    {
+                        "name": "Linux",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Cloud",
+                "icon": "faCloud",
+                "skills": [
+                    {
+                        "name": "AWS",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Azure",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Google Cloud",
+                        "level": "Intermediário"
+                    }
+                ]
+            },
+            {
+                "group": "Ferramentas e tecnologias",
+                "icon": "faTools",
+                "skills": [
+                    {
+                        "name": "VSCode",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Git",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Docker",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "Scrum",
+                        "level": "Intermediário"
+                    },
+                    {
+                        "name": "DevOps",
+                        "level": "Intermediário"
+                    }
+                ]
+            }
+        ]
+    },
+    "languages": {
+        "title": "Idiomas",
+        "content": [
+            {
+                "name": "Português",
+                "level": "C2"
+            },
+            {
+                "name": "Inglês",
+                "level": "C1"
+            },
+            {
+                "name": "Espanhol",
+                "level": "B2"
+            }
+        ]
+    },
+    "experiences": {
+        "title": "Experiência Profissional",
+        "content": [
+            {
+                "company": "FundX Academy",
+                "position": "Desenvolvedor Back End | Tech leader, Tempo Integral",
+                "startDate": "Mai 2022",
+                "endDate": "Out 2022",
+                "location": "Porto, Portugal"
+            },
+            {
+                "company": "Empresa de Pesquisa Energética",
+                "position": "Cientista de Dados, Meio Período",
+                "startDate": "Out 2021",
+                "endDate": "Out 2023",
+                "location": "Rio de Janeiro, RJ"
+            },
+            {
+                "company": "Universinagem",
+                "position": "Desenvolvedor Full-stack, Tempo Integral",
+                "startDate": "Out 2019",
+                "endDate": "Jan 2025",
+                "location": "Rio de Janeiro, RJ"
+            },
+            {
+                "company": "Minerva Rockets",
+                "position": "Engenheiro de Inovação, Meio Período",
+                "startDate": "Out 2019",
+                "endDate": "Mar 2022",
+                "location": "Rio de Janeiro, RJ"
+            }
+        ]
+    },
+    "education": {
+        "title": "Educação",
+        "content": [
+            {
+                "institution": "Universidade Federal do Rio de Janeiro",
+                "title": "Mestre em Engenharia Elétrica",
+                "degree": "Mestrado",
+                "startDate": "2024",
+                "location": "Rio de Janeiro, RJ"
+            },
+            {
+                "institution": "Universidade Federal do Rio de Janeiro",
+                "title": "Bacharel em Engenharia Eletrônica",
+                "degree": "Bacharel",
+                "startDate": "2017",
+                "endDate": "2024",
+                "location": "Rio de Janeiro, RJ"
+            },
+            {
+                "institution": "FAETEC RJ - E.T.E. João Luiz do Nascimento",
+                "title": "Técnico em Eletrônica",
+                "degree": "Ensino Médio e Técnico",
+                "startDate": "2014",
+                "endDate": "2016",
+                "location": "Nova Iguaçu, RJ"
+            }
+        ]
+    },
+    "templates": [
+        "ATSFriendly",
+        "CleanCV"
+    ],
+    "translations": [
+        {
+            "value": "pt",
+            "name": "Português"
+        },
+        {
+            "value": "en",
+            "name": "Inglês"
+        },
+        {
+            "value": "es",
+            "name": "Espanhol"
+        }
+    ]
+}
