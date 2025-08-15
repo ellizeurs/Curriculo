@@ -1,0 +1,261 @@
+% Clean CV/Resume Template, by Bennet B <dev@bennet.cc>
+% CC0, Public-Domain
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this template and associated files (the "Template"), to deal
+% in the Template without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Template, and to permit persons to whom the Template is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Template.
+%
+% THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE TEMPLATE OR THE USE OR OTHER DEALINGS IN THE
+% TEMPLATE.
+%
+% based on Modern CV by Habib Semouma
+% https://www.overleaf.com/latex/templates/modern-cv-slash-resume-template/vjrqdkpjckwj
+%
+% 
+\documentclass[oneside]{article}
+\usepackage{wallpaper}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[
+	unicode=true,
+	bookmarks=true,
+	bookmarksnumbered=false,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	breaklinks=false,
+	pdfborder={0 0 0},
+	backref=false,
+	colorlinks=false
+]{hyperref}
+\usepackage{lastpage}
+\usepackage{hyphenat}
+\usepackage{hyphsubst}
+\usepackage{tabularx}
+\usepackage{moresize}
+\usepackage[document]{ragged2e}
+% \usepackage{parskip}
+
+\usepackage[scaled]{helvet}
+\usepackage{fontawesome5}
+\usepackage[defaultfam,tabular,oldstyle]{montserrat}
+\usepackage[T1]{fontenc}
+
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Conteúdo do arquivo cvstyle.sty
+{% raw %}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+{% endraw %}
+% Configurações de formatação do documento
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\normalfont}{}{0pt}{}
+\renewcommand{\arraystretch}{1.4}
+\setlength\fboxrule{0pt}
+\setlength\fboxsep{12pt}
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% Configurações do hyperref
+\hypersetup{
+	pdftitle={{firstName}} - CV - Português,
+	pdfauthor={{personalInformation.name}},
+	pdfsubject={CV}
+}
+
+% Configurações de margem e papel
+\geometry{
+	a4paper,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	nohead,
+	nomarginpar
+}
+
+% Definição de cores
+\definecolor{sidebg}{cmyk}{1, 0.02, 0, 0.56}
+\definecolor{mainbg}{cmyk}{0, 0, 0.07, 0.04}
+\definecolor{maintext}{cmyk}{1, 0.02, 0, 0.8}
+\definecolor{sidetext}{cmyk}{0, 0, 0.07, 0.04}
+
+% Configuração de cor de fundo da página
+\pagecolor{mainbg}
+
+
+\renewcommand{\newpage}{}
+
+\begin{document}
+\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
+\fcolorbox{red}{sidebg}{
+{% raw %}
+		\begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.40\textwidth-2\fboxrule-2\fboxsep\relax}
+			{% endraw %}
+			\color{sidetext}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% YOUR NAME, PRONOUNS, OCCUPATION(s), AND HEADSHOT
+			{\bfseries\scshape\HUGE {{firstName}}} \\
+			{\bfseries\scshape\Huge {{surName}}}
+			\vspace{.3cm} \\
+			{{personalInformation.occupation}}
+			\\
+			\vspace{.3cm}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% YOUR PERSONAL INFROMATION
+			\phantomsection{}
+			\addcontentsline{toc}{section}{aboutMe}
+			\section*{\large {{aboutMe.title}}}
+			 {{aboutMe.content}}
+			\vspace{.3cm} \\
+			\rule{\linewidth}{0.4pt} \\
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% YOUR PERSONAL INFROMATION
+			\phantomsection{}
+			\addcontentsline{toc}{section}{Personal info}
+			\section*{}
+			\begin{tabularx}{\textwidth}{cY}
+				\faStarOfLife{} & {{personalInformation.birthDate}}                                                                      \\
+				\faPhone{}      & {{personalInformation.phone}}                                                                          \\
+				\faEnvelope{}   & \href{mailto:{{personalInformation.email}}}{{personalInformation.email}}                               \\
+				%    \faCode{}     & \href{https://example.com}{example.com}
+				\faGithub{}     & \href{https://github.com/{{personalInformation.github}}}{/{{personalInformation.github}}}              \\
+				\faLinkedin{}   & \href{https://www.linkedin.com/in/{{personalInformation.linkedin}}}{/{{personalInformation.linkedin}}} \\
+				\faMapMarker{}  & {{personalInformation.location}}                                                                       \\
+			\end{tabularx}
+			\vspace{.3cm} \\
+			\rule{\linewidth}{0.4pt} \\
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% YOUR SKILLS
+			% Add/Remove as seen fit, Icons: https://packages.oth-regensburg.de/ctan/fonts/fontawesome5/doc/fontawesome5.pdf
+			\phantomsection{}
+			\addcontentsline{toc}{section}{skills}
+			\section*{\large {{skills.title}}}
+			\begin{tabularx}{\textwidth}{cY}
+				{% for h in skills.content %}
+				\{{ h.icon }} & {{ h.skills | map(attribute='name') | join(', ') }} \\
+				{% endfor %}
+			\end{tabularx}
+			\vspace{1pt} \\
+			\rule{\linewidth}{0.4pt}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% LANGUAGES
+			\phantomsection
+			\addcontentsline{toc}{section}{languages}
+			\section*{\large {{languages.title}}}
+			\begin{tabular}{cl}
+				{% for l in languages.content %}
+				\faLanguage & {{ l.name }} \\
+				{% endfor %}
+			\end{tabular}
+			%\vspace{.3cm}
+			%\\
+			%\rule{\linewidth}{0.4pt}
+			\\
+		\end{minipage}
+	}
+\hfill
+\fcolorbox{red}{mainbg}{
+{% raw %}
+		\begin{minipage}[t][\dimexpr\textheight-2\fboxrule-2\fboxsep\relax][t]{\dimexpr0.6\textwidth-2\fboxrule-2\fboxsep\relax}
+			{% endraw %}
+			\color{maintext}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% OBJETIVO
+			\phantomsection{}
+			\addcontentsline{toc}{section}{goal}
+			\section*{\scshape\Large {{goal.title}} \rule{\linewidth}{0.4pt}}
+			 {
+			  {{goal.content}}
+			  \\[1ex]}
+			\vspace{.3cm}
+
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% WORK EXPERIENCE
+			\phantomsection{}
+			\addcontentsline{toc}{section}{experiences}
+			\section*{\scshape\Large {{experiences.title}} \rule{\linewidth}{0.4pt}}
+			{% for e in experiences.content %}
+			{\large
+					\hspace{-0.5em}
+					\textbf{
+						{{e.company}}
+					}} \\
+			{% raw %}
+			{{\fontseries{medium}\selectfont
+					{% endraw %}
+						{{e.position}}
+					}} \\
+			{\scshape\fontseries{light}\selectfont\footnotesize
+			{{e.startDate}} \textendash{}
+			{{e.endDate if e.endDate else ""}}}
+			\begin{itemize}
+				{% for i in e.additionalInfo %}
+				\setlength{\itemsep}{-3pt}
+				\item {{i.title}}
+				      \begin{itemize}
+					      {% for c in i.content %}
+					      \item {{c}}
+					            {% endfor %}
+				      \end{itemize}
+				      {% endfor %}
+			\end{itemize}
+			\vspace{.3cm}
+			{% endfor %}
+
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% EDUCATION
+			\phantomsection{}
+			\addcontentsline{toc}{section}{education}
+			\section*{\scshape\Large {{education.title}} \rule{\linewidth}{0.4pt}}
+
+
+			{% for e in education.content %}
+			{\large
+					\hspace{-0.5em}
+					\textbf{
+						{{e.institution}} ({{e.degree}})
+					}} \\
+			{\scshape\fontseries{light}\selectfont\footnotesize {{e.location}} \qquad {{e.startDate}} \textendash{} {{e.endDate if e.endDate else ""}}} \\
+			{{e.title}} \\[1ex]
+			\begin{itemize}
+				{% for i in e.additionalInfo %}
+				\setlength{\itemsep}{-3pt}
+				\item {{i.title}}
+				      \begin{itemize}
+					      {% for c in i.content %}
+					      \item {{c}}
+					            {% endfor %}
+				      \end{itemize}
+				      {% endfor %}
+			\end{itemize}
+			\vspace{.3cm}
+			{% endfor %}
+
+
+			{% for a in additionalInfo %}
+			\phantomsection{}
+			\addcontentsline{toc}{section}{ {{a.title}} }
+			\section*{\scshape\Large {{a.title}} \rule{\linewidth}{0.4pt}}
+			 {
+			  {{a.content}}
+			  \\[1ex]}
+			\vspace{.3cm}
+            {% endfor %}
+
+			\vfill%
+		\end{minipage}
+	}%
+\end{document}
