@@ -1,0 +1,22 @@
+from pathlib import Path
+from jinja2 import Environment, FileSystemLoader
+from urllib.parse import quote
+
+def generate_readme(template_path: str, output_path: str, pdf_folder: str):
+    template_file = Path(template_path)
+    env = Environment(
+        loader=FileSystemLoader(template_file.parent),
+        autoescape=False
+    )
+    template = env.get_template(template_file.name)
+
+    # Pega todos os PDFs gerados
+    pdfs = sorted(Path(pdf_folder).glob("*.pdf"))
+    files_list = "\n".join([f"- [{pdf.name}](https://github.com/ellizeurs/Curriculo/blob/main/{quote(str(pdf.relative_to(Path(output_path).parent)))})" for pdf in pdfs])
+
+    # Renderiza o template
+    content = template.render(FILES=files_list)
+
+    # Salva o README.md
+    Path(output_path).write_text(content, encoding="utf-8")
+    print(f"README gerado em {output_path}")

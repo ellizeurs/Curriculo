@@ -5,6 +5,7 @@ import json
 from utils.clean_output_directory import clean_output_directory
 from utils.generate_jinja_pdf import generate_jinja_pdf
 from utils.translate_json import translate_json
+from utils.generate_readme import generate_readme
 
 
 if __name__ == "__main__":
@@ -33,10 +34,17 @@ if __name__ == "__main__":
                     generate_jinja_pdf,
                     templates_path / template / f"{template}.tex.template",
                     dados_traduzidos,
-                    output_name=f"{first_name}_{template}_{translation['name']}",
+                    output_name=f"{first_name} - {template} - {translation['name']}",
                 )
                 for template in dados["templates"]
             ]
 
             for f in futures:
                 f.result()
+
+    # Gera o README.md
+    generate_readme(
+        template_path="templates/README.md.template",
+        output_path="README.md",
+        pdf_folder="PDFs"
+    )
