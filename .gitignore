@@ -34,3 +34,4 @@
 *.run.xml
 *.synctex\(busy\)
 venv/
+__pycache__/
