@@ -1,40 +1,14 @@
-import subprocess
+from concurrent.futures import ProcessPoolExecutor
+import asyncio
 from pathlib import Path
-from jinja2 import Environment, FileSystemLoader
 import json
+from utils.clean_output_directory import clean_output_directory
+from utils.generate_jinja_pdf import generate_jinja_pdf
+from utils.translate_json import translate_json
 
-def generate_jinja_pdf(template_path: str, variables: dict, output_name: str = "output"):
-    template_file = Path(template_path)
-    env = Environment(
-        loader=FileSystemLoader(template_file.parent),
-        autoescape=False,
-        block_start_string="{%",
-        block_end_string="%}",
-        variable_start_string="{{",
-        variable_end_string="}}"
-)
-
-    template = env.get_template(template_file.name)
-
-    # Renderiza o conteúdo do LaTeX com as variáveis
-    conteudo_renderizado = template.render(variables)
-
-    # Salva o arquivo gerado
-    tex_final = template_file.parent.parent / "PDFs" / f"{output_name}.tex"
-    tex_final.write_text(conteudo_renderizado, encoding="utf-8")
-
-    # Compila para PDF
-    subprocess.run(["pdflatex", "-interaction=nonstopmode", tex_final.name], cwd=template_file.parent, check=True)
-
-    # Remove arquivos auxiliares
-    for ext in [".aux", ".log", ".out"]:
-        arq = template_file.parent / f"{output_name}{ext}"
-        if arq.exists():
-            arq.unlink()
-
-    print(f"PDF gerado: {output_name}.pdf")
 
 if __name__ == "__main__":
+    templates_path = Path("./templates")
     with open("dados.json", "r", encoding="utf-8") as f:
         dados = json.load(f)
 
@@ -44,8 +18,25 @@ if __name__ == "__main__":
     dados["firstName"] = first_name
     dados["surName"] = " ".join(sur_name)
 
-    generate_jinja_pdf(
-        "templates/ATSFriendly/ATSFriendly.tex.template",
-        dados,
-        output_name="lista_produtos"
-    )
+    translations = dados.get("translations", {})
+
+    clean_output_directory(Path("./PDFs"))
+
+    for translation in translations:
+        if translation["value"] == dados.get("language"):
+            dados_traduzidos = dados
+        else:
+            dados_traduzidos = asyncio.run(translate_json(dados, src=dados.get("language"), dest=translation["value"]))
+        with ProcessPoolExecutor() as executor:
+            futures = [
+                executor.submit(
+                    generate_jinja_pdf,
+                    templates_path / template / f"{template}.tex.template",
+                    dados_traduzidos,
+                    output_name=f"{first_name}_{template}_{translation['name']}",
+                )
+                for template in dados["templates"]
+            ]
+
+            for f in futures:
+                f.result()
