@@ -3,6 +3,7 @@ from googletrans import Translator
 
 async def translate_json(data, src="pt", dest="en"):
     translator = Translator()
+    print(f"Traduzindo de {src} para {dest}")
     pattern = re.compile(r'(\{\{.*?\}\}|\\\{.*?\\\})')  # preserva {{...}} e \{...\}
 
     async def translate_value(value, key=None):
