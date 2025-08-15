@@ -17,12 +17,12 @@ python main.py
 4. Os arquivos serão gerados na pasta PDFs
 
 ## Arquivos gerados
-- [Ellizeu - ATSFriendly - English.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20ATSFriendly%20-%20English.pdf)
-- [Ellizeu - ATSFriendly - Español.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20ATSFriendly%20-%20Espa%C3%B1ol.pdf)
-- [Ellizeu - ATSFriendly - Português.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20ATSFriendly%20-%20Portugu%C3%AAs.pdf)
-- [Ellizeu - CleanCV - English.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20CleanCV%20-%20English.pdf)
-- [Ellizeu - CleanCV - Español.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20CleanCV%20-%20Espa%C3%B1ol.pdf)
-- [Ellizeu - CleanCV - Português.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs%5CEllizeu%20-%20CleanCV%20-%20Portugu%C3%AAs.pdf)
+- [Ellizeu - ATSFriendly - English.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20ATSFriendly%20-%20English.pdf)
+- [Ellizeu - ATSFriendly - Español.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20ATSFriendly%20-%20Espa%C3%B1ol.pdf)
+- [Ellizeu - ATSFriendly - Português.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20ATSFriendly%20-%20Portugu%C3%AAs.pdf)
+- [Ellizeu - CleanCV - English.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20CleanCV%20-%20English.pdf)
+- [Ellizeu - CleanCV - Español.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20CleanCV%20-%20Espa%C3%B1ol.pdf)
+- [Ellizeu - CleanCV - Português.pdf](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/Ellizeu%20-%20CleanCV%20-%20Portugu%C3%AAs.pdf)
 
 ## Links Importantes
 
