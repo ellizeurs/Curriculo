@@ -7,4 +7,4 @@ def clean_output_directory(output_dir: Path):
     """
     for file in output_dir.iterdir():
         os.remove(file) if file.is_file() else None
-    print(f"Cleaned output directory: {output_dir}")
+    print(f"Limpando diretório de saída: {output_dir}")

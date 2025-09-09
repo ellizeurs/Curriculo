@@ -11,6 +11,8 @@ if __name__ == "__main__":
     with open("dados.json", "r", encoding="utf-8") as f:
         dados = json.load(f)
 
+    print("Iniciando geração de PDFs...")
+
     # Limpa o diretório de saída
     clean_output_directory(Path("./PDFs"))
 
@@ -23,3 +25,5 @@ if __name__ == "__main__":
         output_path="README.md",
         pdf_folder="PDFs"
     )
+
+    print("Arquivos gerados com sucesso.")

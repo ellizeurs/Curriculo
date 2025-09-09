@@ -19,4 +19,4 @@ def generate_readme(template_path: str, output_path: str, pdf_folder: str):
 
     # Salva o README.md
     Path(output_path).write_text(content, encoding="utf-8")
-    print(f"README gerado em {output_path}")
+    print(f"README gerado: {output_path}")
