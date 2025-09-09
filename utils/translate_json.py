@@ -7,7 +7,7 @@ async def translate_json(data, src="pt", dest="en"):
     pattern = re.compile(r'(\{\{.*?\}\}|\\\{.*?\\\})')  # preserva {{...}} e \{...\}
 
     async def translate_value(value, key=None):
-        if key in ["icon","linkedin", "github"]:
+        if key in ["icon","linkedin", "github", "name", "company", "institution"]:
             return value
 
         if isinstance(value, str) and value.strip():
