@@ -381,7 +381,8 @@
         ]
     },
     "templates": [
-        "ATSFriendly"
+        "ATSFriendly",
+        "CleanCV"
     ],
     "translations": [
         {
