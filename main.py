@@ -27,6 +27,7 @@ if __name__ == "__main__":
 
     # Gera o README.md
     generate_readme(
+        dados = dados,
         template_path="templates/README.md.template",
         output_path="README.md",
         pdf_folder=output_path
