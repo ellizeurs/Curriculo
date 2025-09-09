@@ -304,28 +304,51 @@
                 "position": "Desenvolvedor Back End | Tech leader, Tempo Integral",
                 "startDate": "Mai 2022",
                 "endDate": "Out 2022",
-                "location": "Porto, Portugal"
+                "location": "Porto, Portugal",
+                "additionalInfo": [
+                    {
+                        "title": "Resumo", "content": ["Trabalhei no desenvolvimento de uma plataforma de educação financeira com foco no mercado latino-americano, com videoaulas, lives e PDFs hospedados em servidores próprios."]
+                    },
+                    {
+                        "title": "Habilidades", "content": ["NodeJS", "AWS", "SQL", "noSQL", "OAuth"]
+                    },
+                    {
+                        "title": "Funções", "content": ["Desenvolvimento back-end", "Gestão de equipe de desenvolvimento", "Seleção de tecnologias utilizadas."]
+                    }
+                ]
             },
             {
                 "company": "Empresa de Pesquisa Energética",
                 "position": "Cientista de Dados, Meio Período",
                 "startDate": "Out 2021",
                 "endDate": "Out 2023",
-                "location": "Rio de Janeiro, RJ"
+                "location": "Rio de Janeiro, RJ",
+                "additionalInfo": [
+                    {"title": "Habilidades", "content": ["Python", "Linux", "Controle de versão", "Shell script", "Microsoft Excel", "Git", "Infraestrutura de nuvem", "Criação de scripts", "Algoritmos", "Microsoft Office", "PyTorch"]}
+                ]
             },
             {
                 "company": "Universinagem",
                 "position": "Desenvolvedor Full-stack, Tempo Integral",
                 "startDate": "Out 2019",
                 "endDate": "Jan 2025",
-                "location": "Rio de Janeiro, RJ"
+                "location": "Rio de Janeiro, RJ",
+                "additionalInfo": [
+                    {"title": "Resumo", "content": ["Trabalhei no desenvolvimento de uma plataforma de cotações automatizada para a área de impressão 3D com visualização de arquivos CAD, integrada a uma plataforma de envio e pagamento."]},
+                    {"title": "Habilidades", "content": ["PHP", "Javascript", "OAuth", "CSS", "MySQL", "Python", "Linux", "Git"]},
+                    {"title": "Funções", "content": ["Criação e Manutenção da plataforma.", "Monitoramento de servidores.", "Automação de tarefas."]}
+                ]
             },
             {
                 "company": "Minerva Rockets",
                 "position": "Engenheiro de Inovação, Meio Período",
                 "startDate": "Out 2019",
                 "endDate": "Mar 2022",
-                "location": "Rio de Janeiro, RJ"
+                "location": "Rio de Janeiro, RJ",
+                "additionalInfo": [
+                    {"title": "Habilidades", "content": ["C (linguagem de programação)", "Inovação tecnológica", "Controle de versão", "Banco de dados", "GitHub", "Engenharia", "HTML", "Documentação técnica", "Padrões de design", "Angular (Framework)", "Git", "Scrum", "Automação", "Banco de dados SQL", "Algoritmos", "Django", "REST (Transferência de estado representacional)", "Aplicativos web", "Desenvolvimento de back-end", "Servidor Apache"]},
+                    {"title": "Funções", "content": ["Desenvolvimento de soluções inovadoras", "Gerenciamento de projetos", "Colaboração em equipe multidisciplinar"]}
+                ]
             }
         ]
     },
