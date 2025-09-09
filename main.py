@@ -1,9 +1,9 @@
-from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 import json
 from utils.clean_output_directory import clean_output_directory
-from utils.generate_pdfs_for_translation import generate_pdfs_for_translation
+from utils.generate_all_pdfs import generate_all_pdfs
 from utils.generate_readme import generate_readme
+
 
 
 if __name__ == "__main__":
@@ -11,17 +11,11 @@ if __name__ == "__main__":
     with open("dados.json", "r", encoding="utf-8") as f:
         dados = json.load(f)
 
+    # Limpa o diretório de saída
     clean_output_directory(Path("./PDFs"))
 
-    with ProcessPoolExecutor() as executor:
-        futures = [
-            executor.submit(generate_pdfs_for_translation, dados, translation, templates_path)
-            for translation in dados.get("translations", {})
-        ]
-
-        for f in futures:
-            f.result()
-
+    # Gera os PDFs
+    generate_all_pdfs(dados, templates_path)
 
     # Gera o README.md
     generate_readme(
