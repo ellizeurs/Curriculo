@@ -11,9 +11,9 @@ Este repositório contém meu currículo desenvolvido em LaTeX, preenchido e tra
    pip install -r requirements.txt"
    ```
 3. Execute o comando:
-```bash
-python main.py
-```
+   ```bash
+   python main.py
+   ```
 4. Os arquivos serão gerados na pasta PDFs
 
 ## Arquivos gerados
