@@ -302,7 +302,7 @@
         "content": [
             {
                 "company": "FundX Academy",
-                "position": "Desenvolvedor Back End | Tech leader, Tempo Integral",
+                "position": "Desenvolvedor Back End | Tech leader",
                 "startDate": "Mai 2022",
                 "endDate": "Out 2022",
                 "location": "Porto, Portugal",
@@ -320,7 +320,7 @@
             },
             {
                 "company": "Empresa de Pesquisa Energética",
-                "position": "Cientista de Dados, Meio Período",
+                "position": "Cientista de Dados",
                 "startDate": "Out 2021",
                 "endDate": "Out 2023",
                 "location": "Rio de Janeiro, RJ",
@@ -330,7 +330,7 @@
             },
             {
                 "company": "Universinagem",
-                "position": "Desenvolvedor Full-stack, Tempo Integral",
+                "position": "Desenvolvedor Full-stack",
                 "startDate": "Out 2019",
                 "endDate": "Jan 2025",
                 "location": "Rio de Janeiro, RJ",
@@ -342,7 +342,7 @@
             },
             {
                 "company": "Minerva Rockets",
-                "position": "Engenheiro de Inovação, Meio Período",
+                "position": "Engenheiro de Inovação",
                 "startDate": "Out 2019",
                 "endDate": "Mar 2022",
                 "location": "Rio de Janeiro, RJ",
