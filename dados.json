@@ -300,6 +300,23 @@
     "experiences": {
         "title": "Experiência Profissional",
         "content": [
+                {
+                "company": "Imppulse",
+                "position": "Desenvolvedor Full-stack",
+                "startDate": "Dez 2025",
+                "location": "Rio de Janeiro",
+                "additionalInfo": [
+                    {
+                        "title": "Resumo", "content": ["Trabalhei no desenvolvimento de uma plataforma de gerenciamento e processamento de dados de consórcio e liberação de crédito para controle de concessionárias de moto."]
+                    },
+                    {
+                        "title": "Habilidades", "content": ["Python", "Django", "SQL", "ETL", "API"]
+                    },
+                    {
+                        "title": "Funções", "content": ["Desenvolvimento back-end", "Desenvolvimento Front-end"]
+                    }
+                ]
+            },
             {
                 "company": "FundX Academy",
                 "position": "Desenvolvedor Back End | Tech leader",
