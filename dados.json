@@ -375,6 +375,13 @@
         "content": [
             {
                 "institution": "Universidade Federal do Rio de Janeiro",
+                "title": "Doutor em Engenharia Elétrica",
+                "degree": "Doutorado",
+                "startDate": "2026",
+                "location": "Rio de Janeiro, RJ"
+            },
+            {
+                "institution": "Universidade Federal do Rio de Janeiro",
                 "title": "Mestre em Engenharia Elétrica",
                 "degree": "Mestrado",
                 "startDate": "2024",
