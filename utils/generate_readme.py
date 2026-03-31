@@ -12,7 +12,10 @@ def generate_readme(dados: dict, template_path: str, output_path: str, pdf_folde
 
     # Pega todos os PDFs gerados
     pdfs = sorted(Path(pdf_folder).glob("*.pdf"))
-    files_list = "\n".join([f"- [{pdf.name}](https://github.com/ellizeurs/Curriculo/blob/main/PDFs/{quote(pdf.name)})" for pdf in pdfs])
+    files_list = "\n".join([
+        f"- [{pdf.name}](PDFs/{quote(pdf.name)})"
+        for pdf in pdfs
+    ])
 
     # Renderiza o template
     content = template.render(FILES=files_list, LINKEDIN=dados["personalInformation"].get("linkedin", ""), LATTES=dados["personalInformation"].get("lattes", ""))
