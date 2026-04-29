@@ -301,6 +301,23 @@
         "title": "Experiência Profissional",
         "content": [
             {
+                "company": "BK Consultoria",
+                "position": "Engenheiro em Computação",
+                "startDate": "Abr 2026",
+                "location": "Macaé, RJ",
+                "additionalInfo": [
+                    {
+                        "title": "Resumo", "content": ["Trabalho no desenvolvimento de aplicações de automação e gerenciamento com interface ao usuário."]
+                    },
+                    {
+                        "title": "Habilidades", "content": ["Python", "React", "SQL", "noSQL", "OAuth"]
+                    },
+                    {
+                        "title": "Funções", "content": ["Desenvolvimento back-end", "Desenvolvimento Front-end", "Desenvolvimento automações"]
+                    }
+                ]
+            },
+            {
                 "company": "FundX Academy",
                 "position": "Desenvolvedor Back End | Tech leader",
                 "startDate": "Mai 2022",
